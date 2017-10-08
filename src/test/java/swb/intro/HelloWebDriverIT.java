@@ -22,7 +22,7 @@ driver	=	new	ChromeDriver();
                 @Test
                 public	void	helloWebDriver() throws Exception {
                                 driver.get("http://localhost:8081/hello-webdriver.html");
-                                WebElement	pageHeading =	driver.findElement(By.tagName("h1"));
+                                WebElement	pageHeading = driver.findElement(By.tagName("h1"));
                                 assertEquals("Hello WebDriver!",
                                                 pageHeading.getText());
                 }
